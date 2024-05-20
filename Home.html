@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Button to Products</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            background-color: #007bff;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .product-button {
+            padding: 15px 25px;
+            font-size: 16px;
+            color: white;
+            background-color: #ff4d94;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .product-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function showMessage() {
+            alert('Welcome to alibalibali');
+            window.location.href = 'Index.html';
+        }
+    </script>
+</head>
+<body>
+    <header>Alibalibali</header>
+    <div class="button-container">
+        <button class="product-button" onclick="showMessage()">Go to Products</button>
+    </div>
+</body>
+</html>
